@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/MainWindow">
+        <file>Shaders/cylinder_fs.glsl</file>
+        <file>Shaders/cylinder_tsc.glsl</file>
+        <file>Shaders/cylinder_tse.glsl</file>
+        <file>Shaders/cylinder_vs.glsl</file>
+        <file>Shaders/physical_camera_frustum_fs.glsl</file>
+        <file>Shaders/physical_camera_frustum_vs.glsl</file>
+        <file>Shaders/physical_camera_image_fs.glsl</file>
+        <file>Shaders/physical_camera_image_vs.glsl</file>
+        <file>Shaders/voxel_grid_fs.glsl</file>
+        <file>Shaders/voxel_grid_vs.glsl</file>
+        <file>Shaders/bezier_surface_fs.glsl</file>
+        <file>Shaders/bezier_surface_tcs.glsl</file>
+        <file>Shaders/bezier_surface_tes.glsl</file>
+        <file>Shaders/bezier_surface_vs.glsl</file>
+        <file>Shaders/bezier_spline_fs.glsl</file>
+        <file>Shaders/bezier_spline_tcs.glsl</file>
+        <file>Shaders/bezier_spline_tes.glsl</file>
+        <file>Shaders/bezier_spline_vs.glsl</file>
+        <file>Shaders/mesh_fs.glsl</file>
+        <file>Shaders/mesh_vs.glsl</file>
+    </qresource>
+</RCC>

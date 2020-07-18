@@ -1,0 +1,4 @@
+# Log files when training
+logs/
+# Output images after training
+output/

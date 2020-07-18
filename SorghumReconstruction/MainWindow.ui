@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>636</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="ViewerWidget" name="viewerWidget">
+      <property name="minimumSize">
+       <size>
+        <width>614</width>
+        <height>514</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="interpolationSlider">
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>636</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_Images"/>
+    <addaction name="actionOpen_Plant"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuCamera">
+    <property name="title">
+     <string>Camera</string>
+    </property>
+    <addaction name="actionSelect_Camera_1"/>
+    <addaction name="actionSelect_Camera_2"/>
+    <addaction name="actionSelect_Camera_3"/>
+    <addaction name="actionSelect_Camera_4"/>
+    <addaction name="actionSelect_Camera_5"/>
+    <addaction name="actionSelect_Camera_6"/>
+   </widget>
+   <widget class="QMenu" name="menuCalibration">
+    <property name="title">
+     <string>Calibration</string>
+    </property>
+    <addaction name="actionCalibrate_side_image"/>
+    <addaction name="actionCalibrate_top_image"/>
+   </widget>
+   <widget class="QMenu" name="menuReconstruction">
+    <property name="title">
+     <string>Reconstruction</string>
+    </property>
+    <addaction name="actionRun_voxel_carving"/>
+    <addaction name="actionUse_top_image"/>
+    <addaction name="actionExtract_major_component"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuCamera"/>
+   <addaction name="menuCalibration"/>
+   <addaction name="menuReconstruction"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSelect_Camera_1">
+   <property name="text">
+    <string>Select Camera 1</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="actionSelect_Camera_2">
+   <property name="text">
+    <string>Select Camera 2</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="actionSelect_Camera_3">
+   <property name="text">
+    <string>Select Camera 3</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="actionSelect_Camera_4">
+   <property name="text">
+    <string>Select Camera 4</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+4</string>
+   </property>
+  </action>
+  <action name="actionSelect_Camera_5">
+   <property name="text">
+    <string>Select Camera 5</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+5</string>
+   </property>
+  </action>
+  <action name="actionSelect_Camera_6">
+   <property name="text">
+    <string>Select Camera 6</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+6</string>
+   </property>
+  </action>
+  <action name="actionOpen_Image">
+   <property name="text">
+    <string>Open Image</string>
+   </property>
+  </action>
+  <action name="actionCalibrate_side_image">
+   <property name="text">
+    <string>Calibrate side image</string>
+   </property>
+  </action>
+  <action name="actionCalibrate_top_image">
+   <property name="text">
+    <string>Calibrate top image</string>
+   </property>
+  </action>
+  <action name="actionOpen_Images">
+   <property name="text">
+    <string>Open Images</string>
+   </property>
+  </action>
+  <action name="actionOpen_Plant">
+   <property name="text">
+    <string>Open Plant</string>
+   </property>
+  </action>
+  <action name="actionRun_voxel_carving">
+   <property name="text">
+    <string>Run voxel carving</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionExtract_major_component">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Extract major component</string>
+   </property>
+  </action>
+  <action name="actionUse_top_image">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Use top image</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ViewerWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>ViewerWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="MainWindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
